@@ -1,0 +1,130 @@
+[
+    {
+        "id": "1",
+        "img": "https://cdn.discordapp.com/attachments/1088083212435206176/1100780535208484914/42d4e129c5306d17b56cc602fd716f26.jpg",
+        "name": "Cool Kitten",
+        "info": "This cool kitten is wearing his bestest sunnies and his coolest jean jacket to show he's without a care.",
+        "price": "6",
+        "inventory": "642"
+    },
+    {
+        "id": "2",
+        "img": "https://cdn.discordapp.com/attachments/374886916270587904/1100722325483167764/20230426_115535.jpg",
+        "name": "Sniffle",
+        "info": "This curious cat is doing your daily sniff test, what will the verdict be?",
+        "price": "4",
+        "inventory": "683"
+    },
+    {
+        "id": "3",
+        "img": "https://preview.redd.it/8k0g2vul62s41.jpg?width=640&crop=smart&auto=webp&s=9cfd0d20831bb96d03713ab2d6d688aa11d489cf",
+        "name": "Hank",
+        "info": "This cool cowboy kitten is wearing his bestest hat with pride, keeping the ranch safe from invasive critters.",
+        "price": "8",
+        "inventory": "906"
+    },
+    {
+        "id": "4",
+        "img": "https://i.pinimg.com/originals/4e/01/f1/4e01f148dec3ed7a99714e17ce771f09.jpg",
+        "name": "Sad boy",
+        "info": "This sad little cat is screaming into the void.",
+        "price": "4",
+        "inventory": "574"
+    },
+    {
+        "id": "5",
+        "img": "https://static.wixstatic.com/media/82daf4_ff1c0ff1c7fa4ae59bff4fae6b167008.jpg/v1/fill/w_564,h_522,al_c,lg_1,q_80/82daf4_ff1c0ff1c7fa4ae59bff4fae6b167008.jpg",
+        "name": "Lieutenant Dan",
+        "info": "This perfect loaf got new improved legs to stand on.",
+        "price": "4",
+        "inventory": "634"
+    },
+    {
+        "id": "6",
+        "img": "https://i.pinimg.com/originals/7a/53/47/7a534772fd04da8541e0c0660b9921cf.jpg",
+        "name": "PP Peter",
+        "info": "This desperate little fella sent pics he shouldn't have and is now desperate for attention.",
+        "price": "2",
+        "inventory": "525"
+    },
+    {
+        "id": "7",
+        "img": "https://img.ifunny.co/images/326c0131591ed31d3347e0c78ee3b47b481073e87c05085a6549787863ca8957_1.jpg",
+        "name": "Hunter",
+        "info": "This hunting kitty provides his loved ones with snacks, though they may not be appreciated by all.",
+        "price": "4",
+        "inventory": "745"
+    },
+    {
+        "id": "8",
+        "img": "https://www.boredpanda.com/blog/wp-content/uploads/2017/06/hilarious-cat-snapchats-8-5948f0416c4d8__700.jpg",
+        "name": "Sneaky Sue",
+        "info": "This sneaky kitty tried to unlock their owners phone and got caught red handed.",
+        "price": "6",
+        "inventory": "603"
+    },
+    {
+        "id": "9",
+        "img": "https://i.kym-cdn.com/photos/images/facebook/002/021/047/d43",
+        "name": "Happy Harriet",
+        "info": "This happy kitty managed to cheer up her friend and in turn cheered herself up too! How sweet!",
+        "price": "4",
+        "inventory": "735"
+    },
+    {
+        "id": "10",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRypYu1_b0GSLaeO6NbEbpf0UMPOOkxkTmlvw&usqp=CAU",
+        "name": "Steve",
+        "info": "This staring kitty will look right into your soul, what will he find?",
+        "price": "2",
+        "inventory": "648"
+    },
+    {
+        "id": "11",
+        "img": "https://cdn.shopify.com/s/files/1/0614/5989/0385/articles/10-cat-memes-that-will-have-you-laughing-out-loud.png?v=1645196637",
+        "name": "Midnight Zoomies",
+        "info": "This crazy kitten has come to the realization that they are late for their late night zoomies, the horror!",
+        "price": "4",
+        "inventory": "753"
+    },
+    {
+        "id": "12",
+        "img": "https://en.meming.world/images/en/thumb/b/b9/Cursed_Cat.jpg/300px-Cursed_Cat.jpg",
+        "name": "Cryptid Cat",
+        "info": "This cryptic kitty has funky leggos and hissy fists in the air, what is he angry about? The world may never know.",
+        "price": "8",
+        "inventory": "734"
+    },
+    {
+        "id": "13",
+        "img": "https://cdn.discordapp.com/attachments/374886916270587904/1100723349971292281/IMG_4632.jpg",
+        "name": "Tired Tom",
+        "info": "This sleepy kitten is desperate for a nap, can barely keep hims eyes open.",
+        "price": "4",
+        "inventory": "820"
+    },
+    {
+        "id": "14",
+        "img": "https://i.pinimg.com/736x/97/6a/e6/976ae66c01b35faea5fa500e31429465.jpg",
+        "name": "Hehe Funny",
+        "info": "This kitty doesn't like your roast and makes sure you know that they know where you live.",
+        "price": "6",
+        "inventory": "853"
+    },
+    {
+        "id": "15",
+        "img": "https://i.pinimg.com/236x/9f/07/d3/9f07d3ee49e1e939cc4e6a286e16658d.jpg",
+        "name": "Chunky",
+        "info": "This chunky cat is taken by surprise.",
+        "price": "4",
+        "inventory": "265"
+    },
+    {
+        "id": "16",
+        "img": "https://images-prod.dazeddigital.com/669/53-137-669-446/azure/dazed-prod/1330/4/1334197.jpg",
+        "name": "Dabloon",
+        "info": "This mystic cat will meet you on your journey and provide you with coin, 4 dabloons to be exact.",
+        "price": "4",
+        "inventory": "865"
+    }
+]
