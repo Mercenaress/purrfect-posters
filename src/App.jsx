@@ -5,21 +5,27 @@ import Admin from './pages/Admin'
 import AddProduct from './pages/AddProduct'
 import EditProduct from './pages/EditProduct'
 import Preview from './pages/Preview'
-import { useDispatch } from 'react-redux'
+import { Provider, useDispatch } from 'react-redux'
+import { fillInventory } from './app/catPosterSlice'
+import store from './app/store'
 
 function App() {
   const dispatch = useDispatch();
   const [catPosters, setCatPosters] = useState([]);
 
   useEffect(() => {
-    fetch('./public/cats.json')
-    .then(response => response.json())
-    .then(data => setCatPosters(data))
+    async function fetchData() {
+      const response = await fetch('./cats.json');
+      const catPosters = await response.json();
+      setCatPosters(catPosters);
+    }
+
+    fetchData();
   }, []);
 
   useEffect(() => {
     if (catPosters.length > 0) {
-      dispatch(fillStock(catPosters));
+      dispatch(fillInventory(catPosters));
     }
   }, [catPosters]);
 

@@ -13,4 +13,8 @@ export const catPostersSlice = createSlice({
             state.catPosters.push({ id: id, ...action.payload});
         }
     }
-})
+});
+
+export const { fillInventory } = catPostersSlice.actions;
+
+export default catPostersSlice.reducer;
