@@ -5,9 +5,8 @@ import Admin from './pages/Admin'
 import AddProduct from './pages/AddProduct'
 import EditProduct from './pages/EditProduct'
 import Preview from './pages/Preview'
-import { Provider, useDispatch } from 'react-redux'
-import { fillInventory } from './app/catPosterSlice'
-import store from './app/store'
+import { useDispatch } from 'react-redux'
+import { addCatPoster, fillStock } from './app/catPosterSlice'
 
 function App() {
   const dispatch = useDispatch();
@@ -25,7 +24,7 @@ function App() {
 
   useEffect(() => {
     if (catPosters.length > 0) {
-      dispatch(fillInventory(catPosters));
+      dispatch(fillStock(catPosters));
     }
   }, [catPosters]);
 

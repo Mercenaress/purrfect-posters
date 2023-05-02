@@ -1,19 +1,22 @@
-import dabloonImg from './images/dabloon.svg';
+import dabloonImg from '/images/dabloon.svg';
 import SmallButton from './SmallButton';
+import { useSelector } from 'react-redux';
 
-function InventoryCard() {
+function InventoryCard({img, name, price, inventory}) {
+    const state = useSelector((state) => state.catPosters);
+
     return ( 
         <section>
-            <img src="" alt="" />
+            <img src={img} alt="" />
             <section>
-                <h5></h5>
+                <h5>{name}</h5>
                 <section>
-                    <p></p>
+                    <p>{price}</p>
                     <img src={dabloonImg} alt="" />
                 </section>
             </section>
             <section>
-                <p>Stock: </p>
+                <p>Stock: {inventory} </p>
                 <SmallButton/>
             </section>
         </section>

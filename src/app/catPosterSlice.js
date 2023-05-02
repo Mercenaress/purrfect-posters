@@ -11,10 +11,14 @@ export const catPostersSlice = createSlice({
         addCatPoster: (state, action) => {
             let id = state.catPosters.length + 1;
             state.catPosters.push({ id: id, ...action.payload});
+        },
+
+        fillStock: (state, action) => {
+            state.catPosters.push(...action.payload)
         }
     }
 });
 
-export const { fillInventory } = catPostersSlice.actions;
+export const { addCatPoster, fillStock } = catPostersSlice.actions;
 
 export default catPostersSlice.reducer;
