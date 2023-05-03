@@ -1,8 +1,9 @@
-import removeIcon from './images/remove-icon';
+import removeIcon from '/images/remove-icon.svg';
+import style from './RoundButton.module.scss'
 
 function RoundButton() {
     return ( 
-        <button><img src={removeIcon} alt="" /></button>
+        <button className={style.roundButton} ><img src={removeIcon} alt="" /></button>
      );
 }
 

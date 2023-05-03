@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lemon&display=swap%27');
+
+// Colors
+$blackColor: #080705;
+$redColor: #9C0D38;
+$pinkColor: #C94277;
+$lightPinkColor: #FFDFEC;
+$whiteColor: #FFFFFA;
+$greenColor: #BBD8B3;
+
+
+// Fonts
+$titleFont: 'Lemonade';
+$breadFont: 'Fira Sans';
+
+@mixin header-text {
+    font-family: $titleFont;
+    font-size: 1.2rem;
+    color: $whiteColor;
+}
+
+@mixin large-button {
+    font-family: $breadFont;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+@mixin inventory-card {
+    width: 170px;
+    height: 200px;
+    font-family: $breadFont;
+    background-color: $whiteColor;
+    border-radius: 4px;
+    margin: 0.8rem;
+}
+
+@mixin inventory-card-img {
+    width: 170px;
+    height: 120px;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+}
