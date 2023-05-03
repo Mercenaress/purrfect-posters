@@ -20,7 +20,7 @@ function InventoryCard({img, name, price, inventory}) {
             </section>
             <section className={style.cardInfoWrapper}>
                 <p>Stock: {inventory} </p>
-                <SmallButton/>
+                <SmallButton text={'Edit'}/>
             </section>
         </section>
      );

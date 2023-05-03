@@ -1,0 +1,6 @@
+@import '../variables/Variables.scss';
+
+.smallButton {
+    @include small-button;
+    background-color: $greenColor;
+}
