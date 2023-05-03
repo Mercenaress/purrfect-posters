@@ -24,6 +24,7 @@ function App() {
 
   useEffect(() => {
     if (catPosters.length > 0) {
+      console.log("catposters", catPosters);
       dispatch(fillStock(catPosters));
     }
   }, [catPosters]);

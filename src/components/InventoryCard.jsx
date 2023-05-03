@@ -4,12 +4,10 @@ import { useSelector } from 'react-redux';
 import style from "./InventoryCard.module.scss";
 import RoundButton from './RoundButton';
 
-function InventoryCard({img, name, price, inventory}) {
-    const state = useSelector((state) => state.catPosters);
-
+function InventoryCard({img, name, price, inventory, removePoster}) {
     return ( 
         <section className={style.inventoryCard}>
-            <RoundButton/>
+            <RoundButton removePoster={removePoster} />
             <img className={style.inventoryCardImg} src={img} alt="" />
             <section className={style.cardInfoWrapper}>
                 <h4>{name}</h4>

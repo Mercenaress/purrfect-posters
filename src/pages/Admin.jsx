@@ -1,19 +1,20 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import InventoryCard from '../components/InventoryCard';
 import AddNewProduct from '../components/AddNewProduct';
-
+import { removeCatPoster } from '../app/catPosterSlice';
 
 function Admin() {
     const state = useSelector((state) => state.catPosters);
-    console.log(state);
+    
+    const dispatch = useDispatch();
 
     return ( 
         <>
         <section>
             <AddNewProduct/>     
             {
-                state && state.catPosters.map((item) => <InventoryCard img={item.img} name={item.name} price={item.price} inventory={item.inventory} />)
+                state && state.catPosters.map((item) => <InventoryCard img={item.img} name={item.name} price={item.price} inventory={item.inventory} removePoster={() => dispatch(removeCatPoster(item))} />)
             }
         </section>
         </>

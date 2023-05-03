@@ -32,14 +32,13 @@ $breadFont: 'Fira Sans';
     background-color: $whiteColor;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.8rem;
+    margin: 1rem 0.8rem 0rem 0.8rem;
 }
 
 @mixin inventory-card-img {
     width: 170px;
     height: 120px;
     border-radius: 4px 4px 0 0;
-    margin: 0;
 }
 
 @mixin small-button {

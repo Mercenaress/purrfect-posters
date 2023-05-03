@@ -15,10 +15,15 @@ export const catPostersSlice = createSlice({
 
         fillStock: (state, action) => {
             state.catPosters.push(...action.payload)
+        },
+
+        removeCatPoster: (state, action) => {
+            console.log(action.payload.id);
+            state.catPosters = state.catPosters.filter(item => item.id !== action.payload.id);
         }
     }
 });
 
-export const { addCatPoster, fillStock } = catPostersSlice.actions;
+export const { addCatPoster, fillStock, removeCatPoster } = catPostersSlice.actions;
 
 export default catPostersSlice.reducer;
