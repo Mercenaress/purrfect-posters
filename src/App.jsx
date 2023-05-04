@@ -6,7 +6,7 @@ import AddProduct from './pages/AddProduct'
 import EditProduct from './pages/EditProduct'
 import Preview from './pages/Preview'
 import { useDispatch } from 'react-redux'
-import { addCatPoster, fillStock, fillIdCounter } from './app/catPosterSlice'
+import { fillStock, fillIdCounter } from './app/catPosterSlice'
 
 function App() {
   const dispatch = useDispatch();
