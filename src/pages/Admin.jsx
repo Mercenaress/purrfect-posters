@@ -5,7 +5,6 @@ import { removeCatPoster } from "../app/catPosterSlice";
 
 function Admin() {
   const state = useSelector((state) => state.catPosters);
-
   const dispatch = useDispatch();
 
   return (
@@ -21,6 +20,7 @@ function Admin() {
               inventory={item.inventory}
               removePoster={() => dispatch(removeCatPoster(item))}
               key={item.id}
+              id={item.id}
             />
           ))}
       </section>

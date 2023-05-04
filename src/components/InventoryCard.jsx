@@ -3,8 +3,11 @@ import SmallButton from './SmallButton';
 import { useSelector } from 'react-redux';
 import style from "./InventoryCard.module.scss";
 import RoundButton from './RoundButton';
+import { useNavigate } from 'react-router-dom';
 
-function InventoryCard({img, name, price, inventory, removePoster}) {
+function InventoryCard({img, name, price, inventory, removePoster, id}) {
+    const navigate = useNavigate();
+
     return ( 
         <section className={style.inventoryCard}>
             <RoundButton removePoster={removePoster} />
@@ -18,7 +21,7 @@ function InventoryCard({img, name, price, inventory, removePoster}) {
             </section>
             <section className={style.cardInfoWrapper}>
                 <p>Stock: {inventory}</p>
-                <SmallButton text={'Edit'}/>
+                <SmallButton text={'Edit'} handleClick={() => navigate('/editproduct/' + id)} />
             </section>
         </section>
      );

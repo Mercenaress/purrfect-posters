@@ -1,8 +1,8 @@
 import style from './SmallButton.module.scss'
 
-function SmallButton({text}) {
+function SmallButton({text, handleClick}) {
     return ( 
-        <button className={style.smallButton} >{text}</button>
+        <button className={style.smallButton} onClick={handleClick} >{text}</button>
      );
 }
 

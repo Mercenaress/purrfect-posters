@@ -37,7 +37,7 @@ function AddProduct() {
             <InputField label={'Inventory:'} newValue={(e) => setInventoryInput(e.target.value)} />
         </form>
             <LargeButton buttonText={'Add Product'} 
-            addPoster={() => {
+            handleClick={() => {
                 handleAddCatPoster(); 
                 navigate('/');
             }} />

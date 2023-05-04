@@ -1,8 +1,8 @@
 import style from './LargeButton.module.scss'
 
-function LargeButton({buttonText, addPoster}) {
+function LargeButton({buttonText, handleClick}) {
     return ( 
-        <button className={style.LargeButton} onClick={addPoster}>{buttonText}</button>
+        <button className={style.LargeButton} onClick={handleClick}>{buttonText}</button>
      );
 }
 
