@@ -6,7 +6,7 @@ import AddProduct from './pages/AddProduct'
 import EditProduct from './pages/EditProduct'
 import Preview from './pages/Preview'
 import { useDispatch } from 'react-redux'
-import { addCatPoster, fillStock } from './app/catPosterSlice'
+import { addCatPoster, fillStock, fillIdCounter } from './app/catPosterSlice'
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +26,7 @@ function App() {
     if (catPosters.length > 0) {
       console.log("catposters", catPosters);
       dispatch(fillStock(catPosters));
+      dispatch(fillIdCounter(catPosters.length));
     }
   }, [catPosters]);
 

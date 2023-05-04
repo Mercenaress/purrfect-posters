@@ -17,7 +17,7 @@ function InventoryCard({img, name, price, inventory, removePoster}) {
                 </section>
             </section>
             <section className={style.cardInfoWrapper}>
-                <p>Stock: {inventory} </p>
+                <p>Stock: {inventory}</p>
                 <SmallButton text={'Edit'}/>
             </section>
         </section>
