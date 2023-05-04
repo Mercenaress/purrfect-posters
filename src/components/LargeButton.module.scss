@@ -1,0 +1,6 @@
+@import '../variables/Variables.scss';
+
+.LargeButton {
+    @include large-button;
+    @include button-styling;
+}

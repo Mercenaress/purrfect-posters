@@ -1,8 +1,8 @@
-function InputField({label, input}) {
+function InputField({label, newValue}) {
     return ( 
     <section>
         <label htmlFor="">{label}</label>
-        <input type={input} name="" id="" />
+        <input type="text" name="" id="" onChange={newValue} />
     </section>
      );
 }

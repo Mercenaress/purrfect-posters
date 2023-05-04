@@ -1,8 +1,8 @@
-function InfoInputField({label}) {
+function InfoInputField({label, newValue}) {
     return ( 
         <section>
             <label htmlFor="">{label}</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="30" rows="10" onChange={newValue} ></textarea>
         </section>
      );
 }

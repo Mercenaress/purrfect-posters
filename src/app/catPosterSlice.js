@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     catPosters: [],
-    counter: 16
+    counter: 0
 }
 
 export const catPostersSlice = createSlice({
@@ -16,6 +16,7 @@ export const catPostersSlice = createSlice({
            state.counter = action.payload;
         },
         addCatPoster: (state, action) => {
+            console.log(action.payload, 'hehe');
             let id = state.counter += 1;
             state.catPosters.push({ id: id, ...action.payload});
         },

@@ -1,6 +1,8 @@
-function LargeButton({buttonText}) {
+import style from './LargeButton.module.scss'
+
+function LargeButton({buttonText, addPoster}) {
     return ( 
-        <button>{buttonText}</button>
+        <button className={style.LargeButton} onClick={addPoster}>{buttonText}</button>
      );
 }
 
