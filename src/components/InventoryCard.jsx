@@ -1,6 +1,5 @@
 import dabloonImg from '/images/dabloon.svg';
 import SmallButton from './SmallButton';
-import { useSelector } from 'react-redux';
 import style from "./InventoryCard.module.scss";
 import RoundButton from './RoundButton';
 import { useNavigate } from 'react-router-dom';
