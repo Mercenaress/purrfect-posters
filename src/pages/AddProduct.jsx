@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { addCatPoster } from '../app/catPosterSlice';
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header';
+import style from './AddProduct.module.scss'
 
 function AddProduct() {
     const navigate = useNavigate();
@@ -28,19 +30,23 @@ function AddProduct() {
 
     return ( 
         <>
+        <Header/>
         <h2>Add new product</h2>
-        <form action="">
-            <InputField label={'Img url:'} newValue={(e) => setUrlInput(e.target.value)} />
-            <InputField label={'Product name:'} newValue={(e) => setNameInput(e.target.value)} />
-            <InfoInputField label={'Information:'} newValue={(e) => setInfoInput(e.target.value)} />
-            <InputField label={'Price:'} newValue={(e) => setPriceInput(e.target.value)} />
-            <InputField label={'Inventory:'} newValue={(e) => setInventoryInput(e.target.value)} />
-        </form>
-            <LargeButton buttonText={'Add Product'} 
-            handleClick={() => {
-                handleAddCatPoster(); 
-                navigate('/');
-            }} />
+        <section className={style.bodyWrapper}>
+            <form className={style.addProductForm}>
+                <InputField label={'Img url:'} newValue={(e) => setUrlInput(e.target.value)} />
+                <InputField label={'Product name:'} newValue={(e) => setNameInput(e.target.value)} />
+                <InfoInputField label={'Information:'} newValue={(e) => setInfoInput(e.target.value)} />
+                <InputField label={'Price:'} newValue={(e) => setPriceInput(e.target.value)} />
+                <InputField label={'Inventory:'} newValue={(e) => setInventoryInput(e.target.value)} />
+            </form>
+                <LargeButton
+                buttonText={'Add Product'} 
+                handleClick={() => {
+                    handleAddCatPoster(); 
+                    navigate('/');
+                }} />
+            </section>
         </>
      );
 }

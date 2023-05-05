@@ -5,6 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import LargeButton from '../components/LargeButton';
 import { editCatPoster } from '../app/catPosterSlice';
+import Header from '../components/Header';
+import style from './EditProduct.module.scss'
 
 function EditProduct() {
     const [catPoster, setCatPoster] = useState({});
@@ -51,18 +53,22 @@ function EditProduct() {
 
     return ( 
         <>
-        <form action="">
-            <InputField label={'Img url:'} value={catPoster.img} newValue={(e) => setUrlInput(e.target.value)}/>
-            <InputField label={'Product name:'} value={catPoster.name} newValue={(e) => setNameInput(e.target.value)} />
-            <InfoInputField label={'Information:'} value={catPoster.info} newValue={(e) => setInfoInput(e.target.value)} />
-            <InputField label={'Price:'} value={catPoster.price} newValue={(e) => setPriceInput(e.target.value)} />
-            <InputField label={'Inventory:'} value={catPoster.inventory} newValue={(e) => setInventoryInput(e.target.value)} />
-        </form>
-        <LargeButton buttonText={'Confirm Edits'}
-        handleClick={() => {
-            handleEdits();
-            navigate('/');
-        }}/>
+        <Header/>
+        <h2>Edit product</h2>
+        <section className={style.bodyWrapper}>
+            <form action="">
+                <InputField label={'Img url:'} value={catPoster.img} newValue={(e) => setUrlInput(e.target.value)}/>
+                <InputField label={'Product name:'} value={catPoster.name} newValue={(e) => setNameInput(e.target.value)} />
+                <InfoInputField label={'Information:'} value={catPoster.info} newValue={(e) => setInfoInput(e.target.value)} />
+                <InputField label={'Price:'} value={catPoster.price} newValue={(e) => setPriceInput(e.target.value)} />
+                <InputField label={'Inventory:'} value={catPoster.inventory} newValue={(e) => setInventoryInput(e.target.value)} />
+            </form>
+            <LargeButton buttonText={'Confirm Edits'}
+            handleClick={() => {
+                handleEdits();
+                navigate('/');
+            }}/>
+        </section>
         
         </>
      );

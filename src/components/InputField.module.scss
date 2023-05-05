@@ -1,0 +1,11 @@
+@import '../variables/Variables.scss';
+
+.inputWrapper {
+    @include input-wrapper;
+    label {
+        @include input-labels;
+    }
+    input {
+        @include input-styling;
+    }
+}

@@ -1,0 +1,14 @@
+@import '../variables/Variables.scss';
+
+.inputWrapper {
+    @include input-wrapper;
+    label {
+        @include input-labels;
+    }
+    textarea {
+        font-family: $breadFont;
+        font-size: 1rem;
+        border: solid 1px $pinkColor;
+        border-radius: 4px;
+    }
+}

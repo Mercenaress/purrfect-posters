@@ -4,4 +4,7 @@
 
 :root {
 background-color: #FFDFEC;
+display: flex;
+align-items: center;
+justify-content: center;
 }

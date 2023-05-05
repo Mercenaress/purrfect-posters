@@ -1,12 +1,11 @@
-import logo from './images/cat-logo.svg'
-import menu from './images/menu.svg'
+import logo from '/images/cat-logo.svg'
+import style from './Header.module.scss'
 
 function Header() {
     return ( 
-        <header>
+        <header className={style.header}>
             <img src={logo} alt="" />
             <h1>Purrfect Posters</h1>
-            <img src={menu} alt="" />
         </header>
      );
 }
