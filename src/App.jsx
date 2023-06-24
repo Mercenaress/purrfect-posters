@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Admin from './pages/Admin'
 import AddProduct from './pages/AddProduct'
 import EditProduct from './pages/EditProduct'
-import Preview from './pages/Preview'
+// import Preview from './pages/Preview'
 import { useDispatch } from 'react-redux'
 import { fillStock, fillIdCounter } from './app/catPosterSlice'
 
@@ -37,7 +37,7 @@ function App() {
           <Route path='/' element={<Admin/>} />
           <Route path='/addproduct' element={<AddProduct/>} />
           <Route path='/editproduct/:id' element={<EditProduct/>} />
-          <Route path='/preview' element={<Preview/>} />
+          {/* <Route path='/preview' element={<Preview/>} /> */}
         </Routes>
       </BrowserRouter>
     </>
